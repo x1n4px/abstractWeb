@@ -1,0 +1,177 @@
+body {
+  margin-top: 7vh;
+}
+
+section {
+  width: 100%;
+  min-height: 300px;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+
+#buscador {
+  background-color: #dadbf1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#buscador label {
+  font-size: 4em;
+  text-align: center;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.search__input {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #fff;
+  border: none;
+  color: #111;
+  padding: 0.7rem 1rem;
+  width: 20em;
+  transition: all ease-in-out .5s;
+  margin-right: -2rem;
+}
+
+.search__input:hover,
+.search__input:focus {
+  box-shadow: 0 0 1em #00000013;
+}
+
+.search__input:focus {
+  outline: none;
+  background-color: #fff;
+}
+
+.search__input::-webkit-input-placeholder {
+  font-weight: 100;
+  color: #555;
+}
+
+.search__input:focus+.search__button {
+  background-color: #f0eeee;
+}
+
+.search__button {
+  border: none;
+  background-color: #fff;
+  margin-top: .1em;
+}
+
+.search__button:hover {
+  cursor: pointer;
+}
+
+.search__icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: #333;
+}
+
+
+#informacion {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.card {
+  width: 500px;
+  display: flex;
+  padding: 30px;
+}
+
+
+.cardLeft {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+
+}
+
+.cardLeft img {
+  aspect-ratio: 4/3;
+  width: 100%;
+  object-fit: contain;
+  width: 80%;
+}
+
+.cardRight {
+  flex: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+#cardName {
+  font-weight: 600;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+
+
+#cardDescription {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+
+#cardURI {
+  color: #4C5FD5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  /* Quita los estilos predeterminados de la lista desordenada */
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  /* Agrega un espacio vertical entre los elementos de la lista */
+}
+
+.arrow {
+  width: 10px;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(0)
+
+  }
+
+  100% {
+    transform: translateX(10px);
+   }
+}
+
+ul li:hover img.arrow {
+  animation: slide-right 1s infinite both;
+
+  font-weight: 600;
+}
